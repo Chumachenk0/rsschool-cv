@@ -16,7 +16,7 @@ I want to learn Front-End Development in **RSSchool!**
 - **HTML**
 - **CSS**
 - **JavaScript** (Basic)
-- **Pythonn** (Basic)
+- **Python** (Basic)
 - **Git**
 
 ## English
