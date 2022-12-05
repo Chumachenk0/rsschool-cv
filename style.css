@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(214, 227, 239);
+}
+.header {
+  text-align: center;
+}
+.hr {
+  height: 500px;
+  background-color: black;
+}
+.box {
+  display: grid;
+  grid-template-columns: 47% 6% 47%;
+  grid-template-areas:
+    "skills hr contacts"
+    "english hr about_me";
+  grid-row: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.Skills {
+  grid-area: skills;
+  text-align: right;
+  line-height: 10px;
+}
+.hr {
+  grid-area: hr;
+}
+.Contacts {
+  grid-area: contacts;
+  text-align: left;
+}
+.English {
+  grid-area: english;
+  text-align: right;
+  align-self: start;
+}
+.About_me {
+  grid-area: about_me;
+  text-align: left;
+  align-self: start;
+}
+.wite {
+  color: #9d9a9a;
+}
+.foto {
+  border-radius: 50%;
+  margin-top: 7%;
+  position: relative;
+}
+.radius_1 {
+  display: grid;
+  margin-top: 5%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #9d9a9a;
+  margin-left: -150px;
+  position: absolute;
+}
+.radius_2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100% 0% 0% 0%;
+  background-color: #9d9a9a;
+}
+.imeges {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  grid-template-columns: 100%;
+  justify-content: end;
+}
+.blok_radius {
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-family: "Gill Sans", sans-serif;
+}
+h2 {
+  font-family: cursive;
+}
+h1 {
+  font-family: Georgia, serif;
+}
