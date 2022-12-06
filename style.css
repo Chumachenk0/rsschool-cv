@@ -88,3 +88,6 @@ h2 {
 h1 {
   font-family: Georgia, serif;
 }
+progress {
+  transform: scale(-1);
+}
