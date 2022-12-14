@@ -1,1 +1,1 @@
-https://Chumachenk0.github.io/rsschool-cv/
+https://inquisitive-twilight-b7ba12.netlify.app
