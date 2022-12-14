@@ -1,93 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
   margin: 0;
-  background-color: rgb(214, 227, 239);
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("assets/fonts/Roboto.ttf");
 }
 .header {
-  text-align: center;
+  background-color: #2393d2;
 }
-.hr {
-  height: 500px;
-  background-color: black;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.box {
-  display: grid;
-  grid-template-columns: 47% 6% 47%;
-  grid-template-areas:
-    "skills hr contacts"
-    "english hr about_me";
-  grid-row: 10px;
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
+  list-style: none;
 }
-.Skills {
-  grid-area: skills;
-  text-align: right;
-  line-height: 10px;
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #fff;
 }
-.hr {
-  grid-area: hr;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: -5px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.5s;
 }
-.Contacts {
-  grid-area: contacts;
-  text-align: left;
+.nav-item a {
+  color: #f6f8f6;
+  text-decoration: none;
+  transition: color 0.5s;
 }
-.English {
-  grid-area: english;
-  text-align: right;
-  align-self: start;
+.nav-item a:hover {
+  color: #fcd702;
 }
-.About_me {
-  grid-area: about_me;
-  text-align: left;
-  align-self: start;
+span {
+  color: #829985;
 }
-.wite {
-  color: #9d9a9a;
+.foto-name {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 15px solid #fcd702;
+  padding: 30px;
 }
 .foto {
-  border-radius: 50%;
-  margin-top: 7%;
-  position: relative;
-}
-.radius_1 {
-  display: grid;
-  margin-top: 5%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #9d9a9a;
-  margin-left: -150px;
-  position: absolute;
-}
-.radius_2 {
+  border-radius: 20%;
   width: 200px;
   height: 200px;
-  border-radius: 100% 0% 0% 0%;
-  background-color: #9d9a9a;
 }
-.imeges {
-  display: flex;
-  justify-content: center;
+.name {
+  color: #2393d2;
 }
-.footer {
-  display: flex;
-  grid-template-columns: 100%;
-  justify-content: end;
+.main-container {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-areas:
+    "contacts summary"
+    "skills  code"
+    "courses  projects"
+    "education  english";
+  margin-left: 30px;
+  gap: 10px 30px;
 }
-.blok_radius {
-  display: flex;
-  justify-content: center;
+.section {
+  border-bottom: 1px solid #829985;
 }
-p {
-  font-family: "Gill Sans", sans-serif;
+
+#education,
+#english {
+  border-bottom: none;
 }
-h2 {
-  font-family: cursive;
+h2,
+h3,
+h3 {
+  color: #fcd702;
 }
-h1 {
-  font-family: Georgia, serif;
+a {
+  color: #829985;
+  text-decoration: none;
 }
-progress {
-  transform: scale(-1);
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #829985;
 }
+.name-hr {
+  width: 150px;
+  height: 2px;
+  background-color: #829985;
+  margin-left: 110px;
+}
+.rs {
+text-align: right;
+  color: azure;
+  margin-right: 5%;
+  padding: 25px;
+}
+h1,
+h3 {
+  font-weight: 300;
+}
+.footer-div {
+  width: 100%;
+  height: 100px;
+  background-color: #829985;
+  margin-top: 40px;
+}
+.foto-footer {
+  width: 100px;
+}
+.silka-na-githab {
+  color: #0b0b0b;
+}
+.p-silka-na-githab {
+  color: #0b0b0b;
+  text-align: left;
+  margin-left: 10%;
+}
+.div-foto-footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding-top: 30px;
+ }
